@@ -13,10 +13,10 @@ public class CalculatorTest {
         Assert.assertEquals(7, calcalator.sum(a, b));
     }
 
-    @Test
+    @Test(expected = RuntimeException.class)
     public void testSub() {
         int a = 2;
         int b = 5;
-        Assert.assertEquals(-3, calcalator.sub(a, b));
+        calcalator.sub(a, b);
     }
 }

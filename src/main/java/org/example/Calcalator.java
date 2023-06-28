@@ -6,6 +6,9 @@ public class Calcalator {
     }
 
     int sub(int a, int b) {
+        if (a < b) {
+            throw new RuntimeException();
+        }
         return a - b;
     }
 }
